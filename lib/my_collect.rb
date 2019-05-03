@@ -1,12 +1,12 @@
-def my_collect(array)
-  i = 0
-  newArr = []
-  while i < array.length
-  yield array[i]
-  newArr << array[i]
-end
-newArr
-end
+# def my_collect(array)
+#   i = 0
+#   newArr = []
+#   while i < array.length
+#   yield array[i]
+#   newArr << array[i]
+# end
+# newArr
+# end
 
 
 
@@ -16,7 +16,7 @@ def my_collect(array) # put argument(s) here
   result = []
 
   while i < array.size
-    block_given? # optional
+
     result << yield(array[i])
     i += 1
   end
